@@ -1,0 +1,17 @@
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #dcdcdc;
+  height: 95px;
+  border-top: 1px solid #fff;
+  bottom:0;
+}
+
+.simbolo{
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}

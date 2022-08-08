@@ -1,0 +1,44 @@
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.formulario img {
+  height: 400px;
+  width: 375px;
+
+}
+
+.content-formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height:400px;
+  justify-content: center;
+  width: 300px;
+}
+
+.content-formulario h1{
+  font-family: 'Mochiy Pop One', sans-serif;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+}
+.content-formulario button{
+  justify-self: center;
+  align-self: center;
+}
+
+.input{
+  height: 37px;
+  width: 350px;
+  border: 1px solid rgb(0,0,0, 0.09);
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  padding: 0 13px;
+  box-shadow: -2px 2px 3px rgb(0 0 0 / 30%);
+
+}

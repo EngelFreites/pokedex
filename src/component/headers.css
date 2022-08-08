@@ -1,0 +1,55 @@
+
+html {
+  box-sizing: border-box;
+}
+
+html *{
+  box-sizing: inherit;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  top:0;
+  left: 0;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.402);
+  z-index: initial;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+header input {
+  outline: none;
+  border: solid 2px #eee;
+  border-radius: 5px;
+  padding: 10px;
+  width: 340px;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+
+
+
+.logo{
+  margin:10px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.pokeball{
+  height: 100px;
+  width: 100px;
+  margin-right: 25px;
+  cursor: pointer;
+}

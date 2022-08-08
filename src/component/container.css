@@ -1,0 +1,82 @@
+.container{
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: 6px 8px 4px 0px rgb(0, 0, 0, 0.1);
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.container-info{
+  display: flex;
+}
+
+.container-info p{
+  font-size: large;
+  padding: 20px;
+  width: 400px; 
+  margin:0
+}
+
+.container-info p h1{
+  font-family: 'Mochiy Pop One', sans-serif;
+  text-justify: center;
+  margin-bottom: 50px;
+  
+}
+
+/* Container para las cartas de pokemon*/
+.container-card{ 
+  display: grid;
+  grid-template-columns: repeat(3, 235px);
+  grid-template-rows: auto minmax(200px, auto);
+  grid-gap: 20px;
+  justify-content:center;
+  align-items: center;
+}
+
+/*Container para guardar el color del elemento y el nombre del pokemon*/
+.container-element{
+  border-radius: 10px 10px 0 0;
+  height: 50%;
+}
+/* Agregando propiedades al Parrafo dentro del container elemento*/
+.container-element p{
+  margin: 0;
+  margin-top: 10px;
+  color: white;
+
+}
+
+.header-card{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-family: 'Signika', sans-serif;
+  color: white;
+}
+
+.container-descrip{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 50%;
+  background-color: #fafafa;
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 20px;
+}
+
+.descrip{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+.descrip h5{
+  margin: 0;
+}
+

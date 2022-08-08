@@ -1,0 +1,28 @@
+
+
+.card-pokemon{
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  border-radius: 16px;
+  box-shadow: 5px 6px 6px rgb(0,0,0, 0.1);
+
+}
+ 
+.card-pokemon p {
+  margin: 0;
+
+}
+.img-poke{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  position: relative;
+  top: 41px;
+  left: 57px;
+}
+  
+.card-pokemon:hover{
+  box-shadow: 6px 8px 7px rgb(0,0,0, 0.3);
+}
