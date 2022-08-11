@@ -1,6 +1,6 @@
 import {Formik, Form, Field, ErrorMessage} from "formik";
-import './formulario.css'
-import './btn.css'
+import '../component/formulario.css'
+import '../component/btn.css'
 
 
 const Registre = () =>{

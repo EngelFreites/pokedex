@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './headers.css'
-import { Menu } from "../App";
-import Search from "./Search";
+import Search  from'../search/Search'
+import Menu from "../menu/Menu";
+import './header.css'
 
 
 

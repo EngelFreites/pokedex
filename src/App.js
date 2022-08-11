@@ -1,24 +1,12 @@
 import { Routes, Route, Link} from 'react-router-dom'
-import Header from './component/Header'
-import Layout from "./component/Layout"
-import CardInfo from "./component/CardInfo"
-import './component/menu.css'
-import Pokedex from './component/Pokedex'
-import Registre from './component/Registre'
-import Footer from './component/Footer'
+import Header from './component/header/Header'
+import Layout from "./component/layout/Layout"
+import CardInfo from "./pages/CardInfo"
+import './component//menu/Menu.js'
+import Pokedex from './pages/Pokedex'
+import Registre from './pages/Registre'
+import Footer from './component/footer/Footer'
 
-const Menu = () =>{
-  return(
-    <div className="showMenu">
-      <ul>
-        <li><Link to='/'>Inico</Link></li>
-        <li><Link to='/Pokedex'>Pokedex</Link></li>
-        <li><Link to='/Registre'>Registro</Link></li>
-      </ul>
-
-    </div>
-  )
-}
 
 const App = () =>{
   return(
@@ -37,4 +25,4 @@ const App = () =>{
 }
 
 
-export {Menu, App}
+export {App}

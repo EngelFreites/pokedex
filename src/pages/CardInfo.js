@@ -1,4 +1,4 @@
-import './container.css'
+import '../component/container/container.css'
 
 const CardInfo = () =>{
   return(

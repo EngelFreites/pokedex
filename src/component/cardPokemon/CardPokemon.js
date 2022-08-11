@@ -1,6 +1,6 @@
 import './cardPokemon.css'
 import './elementPokemon.css'
-import './container.css'
+import '../container/container.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
