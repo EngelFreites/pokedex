@@ -9,6 +9,7 @@
 
 .container-info{
   display: flex;
+  justify-content: space-around;
 }
 
 .container-info p{
@@ -78,5 +79,11 @@
 
 .descrip h5{
   margin: 0;
+}
+
+.info h3{
+  padding: 25px;
+  margin: 0;
+  font-family: 'Mochiy Pop One', sans-serif;
 }
 

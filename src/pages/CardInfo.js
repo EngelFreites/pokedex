@@ -7,7 +7,10 @@ const CardInfo = () =>{
       style={{width: 400}}
       alt='imagen pokemon'
       ></img>
-      <p><span className='font-title'>POKEDEX ENG</span> El pokédex en el mundo ficticio de Pokémon, es un dispositivo electrónico que interviene en los videojuegos y la serie de anime. En los juegos, su función es registrar los datos de un pokémon. En el manga y el anime, el Pokédex es una enciclopedia electrónica, la cual proporciona al entrenador información sobre un pokémon que es desconocido con tan solo exponer el pokédex en frente del pokémon.</p>
+      <div className='info'>
+        <h3>POKEDEX ENG</h3>
+        <p> El pokédex en el mundo ficticio de Pokémon, es un dispositivo electrónico que interviene en los videojuegos y la serie de anime. En los juegos, su función es registrar los datos de un pokémon. En el manga y el anime, el Pokédex es una enciclopedia electrónica, la cual proporciona al entrenador información sobre un pokémon que es desconocido con tan solo exponer el pokédex en frente del pokémon.</p> 
+      </div>
     </div>
   )
 }

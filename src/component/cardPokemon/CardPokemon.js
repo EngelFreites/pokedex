@@ -22,9 +22,9 @@ const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, 
       </div>
       <div className='container-descrip'>
         <div className='descrip'>
-          <h5><span className='font-large'>HP</span>{baseHp}</h5>
-          <h5><span className='font-large'>ATK</span>{baseAttack}</h5>
-          <h5><span className='font-large'>DEFF</span>{baseDeffense}</h5>
+          <div><h5>HP</h5><p>{baseHp}</p></div>
+          <div><h5>ATK</h5><p>{baseAttack}</p></div>
+          <div><h5>DEF</h5><p>{baseDeffense}</p></div>
         </div>
       </div>
 
