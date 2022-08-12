@@ -6,11 +6,13 @@ import './component//menu/Menu.js'
 import Pokedex from './pages/Pokedex'
 import Registre from './pages/Registre'
 import Footer from './component/footer/Footer'
+import GridLayout from './component/grid-layout/GridLayout'
+
 
 
 const App = () =>{
   return(
-    <div>
+    <GridLayout>
       <Header/>
       <Layout>
         <Routes>
@@ -20,7 +22,7 @@ const App = () =>{
         </Routes>
       </Layout>
       <Footer/>
-    </div>
+    </GridLayout>
   )
 }
 
