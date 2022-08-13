@@ -1,9 +1,42 @@
 
 .layout-ligth-box{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
   height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.full-info{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  margin: auto ;
+  gap: 10px;
+}
+
+.img-pokemon{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.465);
-  
+  grid-row: 1/6;
+}
+
+.img-pokemon img{
+  width: 200px;
+  height: 200px;
+}
+
+.small-info-pokemon{
+  grid-column: 2/6;
 }

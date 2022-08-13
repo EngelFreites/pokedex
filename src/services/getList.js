@@ -6,7 +6,6 @@ const getList = (array) => {
       return convert
     })
   )
-  console.log(allpokemon)
   return allpokemon
 }
 

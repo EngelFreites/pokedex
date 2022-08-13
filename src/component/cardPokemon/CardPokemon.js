@@ -4,7 +4,7 @@ import '../container/container.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, baseDeffense, getName }) =>{
+const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, baseDeffense, getName, state, action, pokemon }) =>{
 
   const [fullName, setFullName] = useState('')
 
@@ -12,8 +12,10 @@ const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, 
   return(
    
       <div className="card-pokemon" onClick={() =>{
-        getName(namePokemon)
+        getName(pokemon)
+        action(!state)
       }}>
+
       <div className={`container-element ${typePokemon}`} >
         <div className='header-card'>
           <p>{upName}</p>

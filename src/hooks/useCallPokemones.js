@@ -8,7 +8,7 @@ const useCallPokemones= () =>{
   const [btnNext, setBtnNext] = useState('')
   const [btnBack, setBtnBack] = useState(null)
   const [data, setData] = useState({})
-  const [namePokemon, setNamePokemon] = useState('')
+  const [infoPokemon, setInfoPokemon] = useState({})
 
   useEffect(() =>{
     getPokemons(url)
@@ -43,7 +43,7 @@ const useCallPokemones= () =>{
 
   
 
-  return [data, pokemones, setNamePokemon, nextUrl, btnBack, previustUrl]
+  return [data, pokemones, setInfoPokemon, nextUrl, btnBack, previustUrl,infoPokemon]
 }
 
 export default useCallPokemones
