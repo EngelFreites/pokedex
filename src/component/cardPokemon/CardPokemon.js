@@ -1,12 +1,8 @@
 import './cardPokemon.css'
 import './elementPokemon.css'
 import '../container/container.css'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
 const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, baseDeffense, getName, state, action, pokemon }) =>{
-
-  const [fullName, setFullName] = useState('')
 
   const upName = namePokemon.toUpperCase()
   return(
