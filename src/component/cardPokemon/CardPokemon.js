@@ -2,27 +2,28 @@ import './cardPokemon.css'
 import './elementPokemon.css'
 import '../container/container.css'
 
-const CardPokemon = ({imgPokemon, namePokemon, typePokemon, baseHp, baseAttack, baseDeffense, getName, state, action, pokemon }) =>{
+const CardPokemon = ({getPokemon,state, action, pokemon }) =>{
 
-  const upName = namePokemon.toUpperCase()
+  const upName = pokemon.name.toUpperCase()
+  console.log(pokemon.types[0].type.name)
+
   return(
-   
       <div className="card-pokemon" onClick={() =>{
-        getName(pokemon)
+        getPokemon(pokemon)
         action(!state)
       }}>
 
-      <div className={`container-element ${typePokemon}`} >
+      <div className={`container-element ${pokemon.types[0].type.name}`} >
         <div className='header-card'>
           <p>{upName}</p>
         </div>
-        <img className='img-poke' src={imgPokemon} alt={namePokemon}></img>
+        <img className='img-poke' src={pokemon.sprites.front_default} alt={pokemon.name}></img>
       </div>
       <div className='container-descrip'>
         <div className='descrip'>
-          <div><h5>HP</h5><p>{baseHp}</p></div>
-          <div><h5>ATK</h5><p>{baseAttack}</p></div>
-          <div><h5>DEF</h5><p>{baseDeffense}</p></div>
+          <div><h5>HP</h5><p>{pokemon.stats[0].base_stat}</p></div>
+          <div><h5>ATK</h5><p>{pokemon.stats[1].base_stat}</p></div>
+          <div><h5>DEF</h5><p>{pokemon.stats[2].base_stat}</p></div>
         </div>
       </div>
 

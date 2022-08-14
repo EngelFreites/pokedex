@@ -39,4 +39,5 @@
 
 .small-info-pokemon{
   grid-column: 2/6;
+  border-radius: 5px;
 }

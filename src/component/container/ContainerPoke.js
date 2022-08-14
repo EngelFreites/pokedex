@@ -1,10 +1,17 @@
 import './container.css'
+import './overflow.css'
 
-const ContainerPoke = ({children}) =>{
+const ContainerPoke = ({children, show}) =>{
   return(
-    <div className=" container container-card">
-      {children}
+    <div>
+      {
+        show 
+        ? <div className=" container container-card overflow"> {children}</div>
+        : <div className=" container container-card">{children}</div>
+      }
     </div>
+    
+   
   )
 }
 
