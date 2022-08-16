@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ContainerPoke from "../component/container/ContainerPoke";
 import CardPokemon from "../component/cardPokemon/CardPokemon";
 import '../component/container/container.css'
@@ -6,11 +6,17 @@ import useCallPokemones from "../hooks/useCallPokemones";
 import LigthBox from "../component/ligthBox/LigthBox";
 
 
-const Pokedex = () =>{
+const Pokedex = ({action}) =>{
   const [data, pokemones, setInfoPokemon, nextUrl, btnBack, previustUrl, infoPokemon] = useCallPokemones()
   const [show, setShow] = useState(false)
+
+  useEffect(()=>{
+    action(show)
+  },[show])
+
   return(
     <div>
+
       <ContainerPoke show={show} >
         {
           pokemones.map(pokemon =>(

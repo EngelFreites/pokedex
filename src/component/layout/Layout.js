@@ -1,9 +1,8 @@
 import './layout.css'
 
-const Layout = ({children}) =>{
+const Layout = ({children, state}) =>{
   return(
-    
-    <div className="layout">
+    <div className={state ? 'layout overflow' : 'layout' }>
       {children}
     </div>
   )

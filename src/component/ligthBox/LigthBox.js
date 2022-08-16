@@ -4,7 +4,7 @@ import '../cardPokemon/elementPokemon.css'
 import Grafic from '../grafic/Grafic'
 
 
-const LigthBox = ({info, state, action}) =>{
+const LigthBox = ({info, state, action, flow}) =>{
 
   return(
     <div className='layout-ligth-box'>
@@ -32,11 +32,16 @@ const LigthBox = ({info, state, action}) =>{
         </div>
 
         <div className='big-info-pokemon'>
-         
+          <Grafic 
+              hp={info.stats[0].base_stat} 
+              def={info.stats[2].base_stat} 
+              speed={info.stats[5].base_stat} 
+              atk={info.stats[1].base_stat} 
+            />
         </div>
         <div className='type'>
           <h4>Tipo:</h4>
-          <div>
+          <div className='container-type'>
             {
               info.types.map((type, index) =>(
                 <p key={index} className={type.type.name}>{type.type.name}</p>

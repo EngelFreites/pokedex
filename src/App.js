@@ -7,17 +7,19 @@ import Pokedex from './pages/Pokedex'
 import Registre from './pages/Registre'
 import Footer from './component/footer/Footer'
 import GridLayout from './component/grid-layout/GridLayout'
+import { useState } from 'react'
 
 
 
 const App = () =>{
+  const [flow, setFlow] = useState(false)
   return(
     <GridLayout>
       <Header/>
-      <Layout>
+      <Layout state={flow}>
         <Routes>
           <Route path='/' element={<CardInfo/>}/>
-          <Route path='/Pokedex' element={<Pokedex/>}/>
+          <Route path='/Pokedex' element={<Pokedex action={setFlow}/>}/>
           <Route path='/Registre' element={<Registre/>}/>
         </Routes>
       </Layout>
