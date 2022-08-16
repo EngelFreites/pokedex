@@ -1,33 +1,48 @@
 import {GrClose} from 'react-icons/gr'
 import './ligth-box.css'
 import '../cardPokemon/elementPokemon.css'
+import Grafic from '../grafic/Grafic'
 
 
 const LigthBox = ({info, state, action}) =>{
 
   return(
     <div className='layout-ligth-box'>
-      <div className='container full-info'>
+      <div className='container full-info special-shadow'>
 
         <div className='img-pokemon'>
-          <img src={info.sprites.front_default} alt={info.name}/>
-          <h2>{info.name}</h2>
+          <h2>{info.name.toUpperCase()}</h2>
+          <img src={info.sprites.other.dream_world.front_default} alt={info.name}/>
+       
         </div>
 
-        <div className= {`small-info-pokemon ${info.types[0].type.name}`}>
-          <p>{info.types[0].type.name}</p>
+        <div className= {`small-info-pokemon`}>
+        <div>
+            <h4>Tamaño:</h4>
+            <p>{info.height} m</p>
+          </div>          
+          <div>
+            <h4>Peso:</h4>
+            <p>{info.weight} Kg</p>
+          </div>
+          <div>
+            <h4>Experiencia:</h4>
+            <p>{info.base_experience} LV</p>
+          </div>
         </div>
 
         <div className='big-info-pokemon'>
-          <p> 
-            {info.stats[0].base_stat}
-          </p>
-          <p>
-            {info.stats[1].base_stat}
-          </p>
-          <p>
-            {info.stats[2].base_stat}
-          </p>
+         
+        </div>
+        <div className='type'>
+          <h4>Tipo:</h4>
+          <div>
+            {
+              info.types.map((type, index) =>(
+                <p key={index} className={type.type.name}>{type.type.name}</p>
+              ))
+            }
+          </div>
         </div>
 
       </div>

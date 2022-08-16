@@ -19,25 +19,85 @@
 
 .full-info{
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin: auto ;
   gap: 10px;
 }
 
 .img-pokemon{
   display: flex;
-  justify-content: center;
   align-items: center;
-  grid-row: 1/6;
+  flex-direction: column;
+}
+
+.img-pokemon h2 {
+  font-family: 'Mochiy Pop One', sans-serif;
+  align-self: center;
+  justify-self:flex-start ;
 }
 
 .img-pokemon img{
   width: 200px;
   height: 200px;
+  margin: auto;
 }
 
 .small-info-pokemon{
-  grid-column: 2/6;
+  background-color: #f1f1f5;
+  display: grid;
   border-radius: 5px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Mochiy Pop One', sans-serif;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  
+}
+
+.small-info-pokemon div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+
+.small-info-pokemon h4{
+  margin: 0;
+}
+
+.small-info-pokemon div p{
+  margin: 0;
+}
+
+.id{
+  align-self: flex-end;
+}
+
+.small-info-pokemon p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
+.special-shadow{
+  box-shadow: 1px 4px 17px rgb(0, 0, 0, 0.5);
+}
+
+
+.type{
+  font-family: 'Mochiy Pop One', sans-serif;
+  padding: 10px;
+}
+
+.type p{
+  text-align: center;
+  padding: 10px;
+  width: 110px;
+  border-radius: 20px;
+  color: white;
 }
