@@ -32,21 +32,18 @@ const Pokedex = ({action}) =>{
         }
 
         <button className="btn-ntx btn" onClick={nextUrl}>Next</button>
-
+        
         {
           btnBack === null 
           ? null
           : <button className="btn-bck btn" onClick={previustUrl}>Back</button>
         }   
-
       </ContainerPoke>
-      
       {
         show 
         ? <LigthBox state={show} action={setShow} info={infoPokemon}/>
         : null
       }
-    
     </div> 
   )
 }

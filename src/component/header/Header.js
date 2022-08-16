@@ -48,7 +48,7 @@ const Header = () =>{
       }
       {
         open 
-        ? <Menu/>
+        ? <Menu state={open} action={setOpen}/>
         : null
       }
     </header>
