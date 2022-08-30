@@ -1,0 +1,34 @@
+.img-gengar{
+  width: 600px;
+  height: 600px;
+}
+
+.img-gengar img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.btn-start{
+  background-color: #a10aa1;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+
+}
+.btn-start a{
+  color: white;
+  text-decoration: none;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: white
+}
