@@ -4,15 +4,18 @@ import CardPokemon from "../component/cardPokemon/CardPokemon";
 import '../component/container/container.css'
 import useCallPokemones from "../hooks/useCallPokemones";
 import LigthBox from "../component/ligthBox/LigthBox";
+import Loading from "../component/loading/Loading";
 
 
 const Pokedex = ({action}) =>{
-  const [data, pokemones, setInfoPokemon, nextUrl, btnBack, previustUrl, infoPokemon] = useCallPokemones()
+  const [data, pokemones, setInfoPokemon, nextUrl, btnBack, previustUrl, infoPokemon, loading] = useCallPokemones()
   const [show, setShow] = useState(false)
 
   useEffect(()=>{
     action(show)
   },[show])
+
+  if(loading) return <Loading/>
 
   return(
     <div>
