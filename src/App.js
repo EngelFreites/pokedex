@@ -8,6 +8,7 @@ import Registre from './pages/Registre'
 import Footer from './component/footer/Footer'
 import GridLayout from './component/grid-layout/GridLayout'
 import { useState } from 'react'
+import Look from './pages/Look'
 
 
 
@@ -19,8 +20,9 @@ const App = () =>{
       <Layout state={flow}>
         <Routes>
           <Route path='/' element={<CardInfo/>}/>
-          <Route path='/Pokedex' element={<Pokedex action={setFlow}/>}/>
-          <Route path='/Registre' element={<Registre/>}/>
+          <Route path='/pokedex' element={<Pokedex action={setFlow}/>}/>
+          <Route path='/registre' element={<Registre/>}/>
+          <Route path='/look/:namePokemon' element={<Look/>}/>
         </Routes>
       </Layout>
       <Footer/>
