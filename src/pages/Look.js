@@ -18,7 +18,9 @@ const Look = () =>{
     <div>
       <div className="card">
       <div className="circle">
-        <img src={pokemon.sprites.other.dream_world.front_default} alt='name'/>
+        <div className="img-looking">
+          <img src={pokemon.sprites.other.dream_world.front_default} alt='name'/>
+        </div>
       </div>
         <div className="screen">
           <h1>name</h1>
