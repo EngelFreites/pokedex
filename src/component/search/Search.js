@@ -2,8 +2,7 @@ import {Formik, Form, Field, ErrorMessage} from "formik";
 import { useNavigate } from "react-router-dom";
 
 
-const Search = ({setName}) =>{
-
+const Search = () =>{
   const navegeitor = useNavigate()
 
   return(

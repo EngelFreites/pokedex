@@ -1,13 +1,18 @@
 
 
-const getPokemon = (name) =>{
-  console.log(name)
+const getPokemon = async (name) =>{
   const url = `https://pokeapi.co/api/v2/pokemon/${name}`
-  const res = fetch(url)
-  const data = res.then(result => result.json())
- 
-  return data
-  
+  try{
+    const res = await fetch(url)
+    if(!res.ok) throw Error()
+    console.log('res ', res)
+    const data = await res.json()
+    return {data, found:true}
+  }
+  catch (error){
+    console.log('error ',error)
+    return {data:[], found:false} 
+  }
 }
 
 export default getPokemon

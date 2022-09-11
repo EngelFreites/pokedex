@@ -9,6 +9,7 @@
   padding: 20px;
   border: solid 3px #000;
   position: relative;
+  border-radius: 0 10px 10px 0;
 }
 
 .img-looking {
@@ -41,8 +42,36 @@
 }
 
 .screen {
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 0;
+  background-color:#97a884;
   width: 400px;
   height: 200px;
   border: 3px solid #000;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.screen h1{
+  justify-self: center;
+  margin: 0;
+  grid-column: 2/3;
+}
+
+.caracter{
+  grid-column: 1/4;
+  grid-row: 2/3;
+
+}
+
+.caracter p{
+  margin: 0;
+}
+
+.class{
+  grid-row:3/4;
+  grid-column: 1/4;
 }
